@@ -1,0 +1,15 @@
+function sendMessages(newMessages) {
+    //lets see what's inside 
+    console.log(newMessages);
+    //send the messaage in there to our db
+    db.add(newMessages[0]);
+    //the message order is reversed, for some reasons
+    setMessages([...newMessages, ...messages]);
+}
+
+return (
+    <View>
+    <Button onPress={logout}>Logout</Button>
+        <Text>Chat</Text>
+    </View>
+);

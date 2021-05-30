@@ -1,0 +1,12 @@
+setMessages([
+    {
+        _id: 1,
+        text: 'Hello there',
+        createdAt: new Date(),
+        user: {
+            _id: 2,
+            name: "Anonymous",
+            avatar: "https://placeimg.com/140/140/any"
+        },
+    },
+]),
